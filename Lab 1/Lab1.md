@@ -51,7 +51,7 @@ incorrect.](./media/image3.png)
 5.  Repeat the steps to register !!Microsoft.Cdn!! and
     !!Microsoft.PolicyInsights!!
 
-#### Task 2.1: Create an Azure Machine Learning workspace
+#### Task 2.2: Create an Azure Machine Learning workspace
 
 This task focuses on creating an Azure Machine Learning workspace. You
 will discover how to set up a dedicated workspace to organize and manage
@@ -124,7 +124,7 @@ medium confidence](./media/image11.png)
     ![A screenshot of a computer Description automatically
 generated](./media/image12.png)
 
-#### Task 2.2: Create a compute
+#### Task 2.3: Create a compute
 
 This task demonstrates the creation of a compute resource in Azure. You
 will explore different compute options, such as virtual machines or
