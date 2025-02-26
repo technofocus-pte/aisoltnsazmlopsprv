@@ -34,9 +34,12 @@ Azure Machine Learning Studio.
 
 1.  Sign in to the Azure portal at !!https://portal.azure.com!! using the login credentials from the **Home** tab of the VM.
     
-2.  Navigate to your assigned **subscription** from the Azure portal
-    Home page.
+2.	Select **Subscriptions** and select your assigned subscription. 
 
+   ![](./media/image85.png)
+
+   ![](./media/image86.png)
+   
 3.  Select Resource Providers under **Settings** from the left pane.
 
 4.  Search for !!Microsoft.StreamAnalytics!! and select the three dots
