@@ -32,18 +32,20 @@ Azure Machine Learning Studio.
 
 #### Task 2.1: Register required Resource Providers 
 
-1.  Navigate to your assigned **subscription** from the Azure portal
+1.  Sign in to the Azure portal at !!https://portal.azure.com!! using the login credentials from the **Home** tab of the VM.
+    
+2.  Navigate to your assigned **subscription** from the Azure portal
     Home page.
 
-2.  Select Resource Providers under **Settings** from the left pane.
+3.  Select Resource Providers under **Settings** from the left pane.
 
-3.  Search for !!Microsoft.StreamAnalytics!! and select the three dots
+4.  Search for !!Microsoft.StreamAnalytics!! and select the three dots
     against the name and click **Register**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image3.png)
 
-4.  Repeat the steps to register !!Microsoft.Cdn!! and
+5.  Repeat the steps to register !!Microsoft.Cdn!! and
     !!Microsoft.PolicyInsights!!
 
 #### Task 2.1: Create an Azure Machine Learning workspace
@@ -52,9 +54,6 @@ This task focuses on creating an Azure Machine Learning workspace. You
 will discover how to set up a dedicated workspace to organize and manage
 their machine learning projects effectively. This workspace serves as a
 central hub for collaboration, experimentation, and deployment.
-
-1.  Sign in to the Azure portal at <https://portal.azure.com> if not
-    already logged in.
 
 2.  From the Azure portal home page, select **+ Create a resource**.
 
