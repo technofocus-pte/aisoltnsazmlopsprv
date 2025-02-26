@@ -35,15 +35,14 @@ medium confidence](./media/image2.png)
     
     - Subscription – Select your **subscription**.
     
-    - Resource group – Select the assigned **Resource group**.
+    - Resource group – Select your **Resource group**.
     
     **Instance details**
     
-    - Storage account name – !!**imagestoreacc@lab.labinstanceid**!!
-      lablabinstanceid
+    - Storage account name – !!**imagestoreaccXX**!! (Replace **XX** with a nuique number to ensure uniqueness)
     
     - Region – Select the Region in which you had created your AML Workspace
-      (**East US/East US2/North Central US**)
+      (Here it is **North Central US**)
     
     - Performance – Select **Standard**
     
