@@ -164,7 +164,13 @@ generated](./media/image19.png)
     based on the file type. In the **Settings** form, review the values
     for your data. Then select **Next**.
 
-[TABLE]
+    | Field | Value |
+    |:----|:---|
+    | File format | Delimited |
+    | Delimiter | Comma |
+    | Encoding | UTF-8 |
+    | Column headers | All files have same headers |
+    | Skip rows | None |
 
     ![A screenshot of a computer Description automatically generated](./media/image20.png)
 
@@ -400,7 +406,13 @@ medium confidence](./media/image45.png)
 
 7.  Populate the **Deploy a model** pane as follows:
 
-[TABLE]
+    | Field | Value |
+    |:---|:------|
+    | Deployment name | +++my-automl-deploy+++ |
+    | Deployment description | +++My first automated machine learning experiment deployment+++ |
+    | Compute type | Select Azure Container Instance (ACI) |
+    | Enable authentication | Disable. |
+    | Use custom deployments | Disable. Allows for the default driver file (scoring script) and environment file to be auto-generated. |
 
     Click on **Deploy**.
 
