@@ -50,7 +50,7 @@ medium confidence](./media/image2.png)
     
     Select **Next.**
 
-    ![A screenshot of a computer Description automatically generated](./media/image3.png)
+    ![](./media/img8.png)
 
 5.  On the Advanced tab, ensure that the option **Allow cross-tenant
     replication** under **Blob storage** section is unchecked. Accept
@@ -72,16 +72,14 @@ generated](./media/image6.png)
     later part of the lab. Stay on the same page and continue with the
     next task.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image7.png)
+    ![](./media/img9.png)
 
 ### **Task 2: Create an Azure Storage Container**
 
 1.  From the left menu of the storage account page, scroll to the **Data
     Storage** section, then select **Containers**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image8.png)
+    ![](./media/img10.png)
 
 2.  Select the **+ Container**. In the New container pane that opens,
     type in the name of the container as !!imagedata!! and then click on
@@ -344,7 +342,7 @@ medium confidence](./media/image20.png)
 32. Click on the **View in** **datastores** or **View in Azure portal**
     link under the **Datasources** -\> **Actions** section.
 
-    ![](./media/image51.png)
+    ![](./media/img11.png)
 
 33. View in datastores.
 
