@@ -32,8 +32,7 @@ generated](./media/image1.png)
     ![A screenshot of a computer Description automatically
 generated](./media/image2.png)
 
-3.  In the Members tab, click on **+ Select members**, search for your
-    **user name** and **Select** it.
+3.  In the Members tab, click on **+ Select members**, search for your **user name(your Azure login id)** and **Select** it.
 
     ![A screenshot of a computer Description automatically
 generated](./media/image3.png)
@@ -85,21 +84,26 @@ generated](./media/image5.png)
 generated](./media/image6.png)
 
 3.  Navigate to **featurestore-\> notebooks-\>sdk_and_cli** and open the
-    notebook 1.Develop-feature-set-and-register.ipynb
+    notebook **1.Develop-feature-set-and-register.ipynb**
 
     ![A screenshot of a computer Description automatically
 generated](./media/image7.png)
 
-**Note:** If you get an error stating Jupyter kernel not found, select
-Start Jupyter kernel.
+::: secondary
+**Note:** If you get an error stating Jupyter kernel not found, ignore and proceed with the next step.
 
-  ![A screenshot of a computer Description automatically generated](./media/image8.png)
+![](./media/img12.png)
+:::
 
 4.  Select **Serverless Spark Compute** under **Compute**.
 
     ![A screenshot of a computer Description automatically
 generated](./media/image9.png)
 
+   Click on **Confirm** if prompted.
+   
+   ![](./media/img13.png)
+   
 5.  Select **Configure session** to configure the session with the
     pre-requisites.
 
@@ -119,19 +123,25 @@ generated](./media/image11.png)
 
     ![A screenshot of a computer Description automatically  generated](./media/image12.png)
 
+    ::: secondary
+    **Note:** If the session does not come to **Ready** state after 10 minutes, Refresh the page and then execute the first cell.
+    :::
+    
     ![A screenshot of a computer Description automatically
 generated](./media/image13.png)
 
-8.  Once the spark session starts, replace the **User name** with your
-    user name and execute the next cell
+9.  Once the spark session starts, replace the **<your_user_alias>** with your
+    **user name** and execute it.
 
-    ![A screenshot of a computer Description automatically
+   ![](./media/img38.png)
+   
+   ![A screenshot of a computer Description automatically
 generated](./media/image14.png)
 
-    ![A screenshot of a computer error Description automatically
+   ![A screenshot of a computer error Description automatically
 generated](./media/image15.png)
 
-9.  Execute the next 3 cells to setup the Azure CLI.
+10.  Execute the next 3 cells to setup the Azure CLI.
 
 An error stating **Error loading command module 'mysql': cannot import
 name 'mysql_flexibleservers' from 'azure.mgmt.rdbms'** can be safely
