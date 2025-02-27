@@ -19,23 +19,23 @@ predict the performance of certain combinations of hardware parts.
 
 2.  From the Azure portal menu , select **All resources.**
 
-  ![A screenshot of a computer Description automatically
+    ![A screenshot of a computer Description automatically
 generated](./media/image1.png)
 
 3.  Select the Azure Machine Learning Workspace (**AzuemlwsXX**).
 
-  ![A screenshot of a computer Description automatically generated with
+    ![A screenshot of a computer Description automatically generated with
 medium confidence](./media/image2.png)
 
 4.  Click on **Launch studio**.
 
-  ![A screenshot of a computer Description automatically
+    ![A screenshot of a computer Description automatically
 generated](./media/image3.png)
 
 5.  Select **Compute** from the left pane to create a Compute instance.
     Select **+ New**.
 
-  ![A screenshot of a computer Description automatically
+    ![A screenshot of a computer Description automatically
 generated](./media/image4.png)
 
 6.  Provide the below details and click on **Review + Create**.
@@ -108,7 +108,7 @@ with low confidence](./media/image12.png)
     
     - RESOURCE_GROUP – **Your assigned Resourcegroup name**
     
-    - AML_WORKSPACE_NAME - **AzuremlwsXX(**XX being the random number)
+    - AML_WORKSPACE_NAME - **AzuremlwsXX**(XX being the random number)
 
 2.  Click on the Run cell option on the top left of the cell and ensure
     that you get a tick symbol at the bottom left once the execution is
@@ -165,7 +165,7 @@ generated](./media/image17.png)
     ![A screenshot of a computer Description automatically generated with
 medium confidence](./media/image18.png)
 
-**Note:** This takes around 10 to 15 minutes to complete.
+    **Note:** This takes around 10 to 15 minutes to complete.
 
 4.	Ensure that the job gets completed successfully.
 
@@ -190,40 +190,42 @@ medium confidence](./media/image22.png)
 
 2.  Copy the below code. Click on **Run cell.**
 
-    +++%pip install azureml-mlflow+++
+    ```
+    %pip install azureml-mlflow
     
-    +++%pip install mlflow+++
-
+    %pip install mlflow
+    ```
+    
     ![A screenshot of a computer Description automatically generated with
 medium confidence](./media/image23.png)
 
-3.  Continue executing the next 3 cells one by one analyzing each code
+4.  Continue executing the next 3 cells one by one analyzing each code
     and its output.
 
     ![A screenshot of a computer Description automatically generated with
 medium confidence](./media/image24.png)
 
-4.  Execute the next cell to **Get the parent run**.
+5.  Execute the next cell to **Get the parent run**.
 
     ![A screenshot of a computer program Description automatically generated
 with low confidence](./media/image25.png)
 
-5.  Execute the next cell to **print the parent tags**.
+6.  Execute the next cell to **print the parent tags**.
 
     ![A screenshot of a computer Description automatically generated with
 low confidence](./media/image26.png)
 
-6.  Execute the next cell to **Get the AutoML best child run**.
+7.  Execute the next cell to **Get the AutoML best child run**.
 
     ![A screenshot of a computer program Description automatically generated
 with medium confidence](./media/image27.png)
 
-7.  Execute the next cell to **Get the best model run’s metrics**.
+8.  Execute the next cell to **Get the best model run’s metrics**.
 
     ![A screenshot of a computer error Description automatically generated
 with low confidence](./media/image28.png)
 
-8.  Execute the next 3 cells to **Download the best model locally**.
+9.  Execute the next 3 cells to **Download the best model locally**.
 
     ![A screenshot of a computer Description automatically generated with
 medium confidence](./media/image29.png)
