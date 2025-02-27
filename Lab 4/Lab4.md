@@ -1,4 +1,4 @@
-# **Lab 04 – Training a classification model with no-code AutoML in the Azure Machine Learning Studio**
+# Lab 04 – Training a classification model with no-code AutoML in the Azure Machine Learning Studio
 
 **Lab Type** – Instructor Led
 
@@ -53,8 +53,7 @@ generated](./media/image2.png)
     - **Workspace name: !!AzuremlwsXX!! (Substitute XX with a random number
       to ensure uniqueness)**
     
-    - **Region**: **East US**/**East US2**/**North Central US** (Select one
-      of these 3)
+    - **Region**: Select your nearest **region** (**North Central US** is selected here)
 
     - **Container registry:** Select **Create new.** Enter
   **!!AzuremlcrXX**!! (Replace **XX** with a unique number)
