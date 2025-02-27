@@ -150,12 +150,11 @@ generated](./media/image15.png)
 
 10.  Execute the next 3 cells to setup the Azure CLI.
 
-An error stating **Error loading command module 'mysql': cannot import
+     An error stating **Error loading command module 'mysql': cannot import
 name 'mysql_flexibleservers' from 'azure.mgmt.rdbms'** can be safely
 ignored in the next 2 cells.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image16.png)
+   ![A screenshot of a computer Description automatically generated](./media/image16.png)
 
 10. In the next cell and follow the steps in the **output** to login to
     **Azure**.
@@ -239,7 +238,7 @@ generated](./media/image26.png)
 
     ![A screenshot of a computer Description automatically generated](./media/image28.png)
 
-2.  From the left pane, select Access Control(IAM). Select **Add** -\>
+2.  From the left pane, select **Access Control(IAM)**. Select **Add** -\>
     **Add role assignment**.
 
    ![A screenshot of a computer Description automatically generated](./media/image29.png)
@@ -557,7 +556,17 @@ In this step you will manually trigger the training pipeline. In a
 production scenario, this could be triggered by a ci/cd pipeline based
 on changes to the feature-retrieval spec in the source repository.
 
-1.  **Execute** the next cell to **run the training pipeline.**
+1.	   Navigate to the **training_pipeline.yaml** file in the path **featurestore -> project -> fraud_model -> pipelines**.
+   
+2.	   Replace the **compute name** in the lines **44, 66 and 83** with the **name** of your **cluster**, **cpu-cluster-fsXX**.
+
+      ![](./media/img15.png)
+
+3.	In **line 20** of the same file, update the **feature retrieval version** to **1.1.0**.
+
+      ![](./media/img16.png)
+  	
+4.  **Execute** the next cell to **run the training pipeline.**
 
     ![A screenshot of a computer Description automatically
 generated](./media/image60.png)
@@ -565,13 +574,13 @@ generated](./media/image60.png)
     ![A screenshot of a computer program Description automatically
 generated](./media/image61.png)
 
-2.  From the left pane of the studio, right click on **Jobs** and open
+5.  From the left pane of the studio, right click on **Jobs** and open
     in a new tab. Select the experiment, **training_on_fraud_model**.
 
     ![A screenshot of a computer Description automatically
 generated](./media/image62.png)
 
-3.  Click on the **training job** and explore the details. The
+6.  Click on the **training job** and explore the details. The
     experiment should take around 5 to 15 minutes to get completed.
 
     ![A screenshot of a computer Description automatically
@@ -580,32 +589,32 @@ generated](./media/image63.png)
     ![A screenshot of a computer Description automatically
 generated](./media/image64.png)
 
-4.  Wait for it to complete. Once completed, select **Models** from the
+7.  Wait for it to complete. Once completed, select **Models** from the
     left pane. Select **fraud_model** from the list. This is the model
     that has been created now.
 
     ![A screenshot of a computer Description automatically
 generated](./media/image65.png)
 
-5.  Select **Feature sets** tab. Here you can see both **transactions**
+8.  Select **Feature sets** tab. Here you can see both **transactions**
     and **accounts** featuresets that this model depends on.
 
     ![A screenshot of a computer Description automatically
 generated](./media/image66.png)
 
-6.  Open the **feature store UI** at !!https://ml.azure.com/home!!.
+9.  Open the **feature store UI** at !!https://ml.azure.com/home!!.
     Select **Feature stores** -\> **featurestore**.
 
     ![A screenshot of a computer Description automatically
 generated](./media/image67.png)
 
-7.  Select **Feature sets** from the left pane and then select any one
+10.  Select **Feature sets** from the left pane and then select any one
     of the **feature sets**.
 
-    ![A screenshot of a computer Description automatically
+     ![A screenshot of a computer Description automatically
 generated](./media/image68.png)
 
-8.  Click on **Models** tab. You can see the list of models that are
+11.  Click on **Models** tab. You can see the list of models that are
     using the feature sets (determined from the feature retrieval spec
     when the model was registered).
 
