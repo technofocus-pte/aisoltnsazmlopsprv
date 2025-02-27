@@ -89,11 +89,11 @@ generated](./media/image6.png)
     ![A screenshot of a computer Description automatically
 generated](./media/image7.png)
 
-::: secondary
-**Note:** If you get an error stating Jupyter kernel not found, ignore and proceed with the next step.
-
-![](./media/img12.png)
-:::
+    ::: secondary
+    **Note:** If you get an error stating Jupyter kernel not found, ignore and proceed with the next step.
+   
+    ![](./media/img12.png)
+    :::
 
 4.  Select **Serverless Spark Compute** under **Compute**.
 
