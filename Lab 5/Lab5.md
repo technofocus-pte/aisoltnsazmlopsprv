@@ -1,4 +1,4 @@
-# **Lab 05 - Forecasting demand with no-code Automated Machine Learning in the Azure Machine Learning studio**
+# Lab 05 - Forecasting demand with no-code Automated Machine Learning in the Azure Machine Learning studio
 
 **Lab Type** – Instructor Led
 
@@ -47,7 +47,7 @@ generated](./media/image3.png)
 
 ### **Task 1: Create data asset**
 
-1.  Select **Create New** under **Experiment name** and enter +++**experiment_forecast**+++ the **New experiment name**, accept the other defaults and select **Next**.
+1.  Select **Create New** under **Experiment name** and enter !!**experiment_forecast**!! the **New experiment name**, accept the other defaults and select **Next**.
 
     ![](./media/img25.png)
 
