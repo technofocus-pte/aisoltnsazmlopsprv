@@ -133,7 +133,14 @@ generated](./media/image13.png)
 9.  Once the spark session starts, replace the **<your_user_alias>** with your
     **user name** and execute it.
 
+   ::: secondary
+   
+   **Note:** You can get the name from the folder structure -> Users -> <UserName>
+
    ![](./media/img38.png)
+   
+   :::
+   
    
    ![A screenshot of a computer Description automatically
 generated](./media/image14.png)
