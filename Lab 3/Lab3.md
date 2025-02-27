@@ -302,25 +302,25 @@ search/browse the feature store.
 4.  **Execute** the next cell to get the **registered feature set** and
     **list its features**.
 
-  ![A screenshot of a computer program Description automatically
+    ![A screenshot of a computer program Description automatically
 generated](./media/image35.png)
 
 5.  **Execute** the next cell to **print** the **sample values**.
 
-  ![A screenshot of a computer Description automatically
+    ![A screenshot of a computer Description automatically
 generated](./media/image36.png)
 
 6.  **Execute** the next cell. In this step we will **select features**
     that we would like to be part of **training data** and use the
     feature store SDK to generate the training data.
 
-  ![A screenshot of a computer program Description automatically
+    ![A screenshot of a computer program Description automatically
 generated](./media/image37.png)
 
 7.  Execute the next cell to generate training dataframe by using
     feature data and observation data.
 
-  ![A screenshot of a computer program Description automatically
+   ![A screenshot of a computer program Description automatically
 generated](./media/image38.png)
 
 ### Task 8: Enable offline materialization on transactions feature set
@@ -411,7 +411,7 @@ generated](./media/image43.png)
 
 5.  **Execute** the next **3** cells to **setup CLI**.
 
-An error stating **Error loading command module 'mysql': cannot import
+    An error stating **Error loading command module 'mysql': cannot import
 name 'mysql_flexibleservers' from 'azure.mgmt.rdbms'** can be safely
 ignored in the next 2 cells.
 
