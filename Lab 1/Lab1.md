@@ -396,7 +396,7 @@ medium confidence](./media/image41.png)
     did in the above step. Explore the details and navigate back to the
     **Notebooks** pane.
 
-    ![](./media/image42.png)
+    ![](./media/img1.png)
 
 #### Task 2.4: Access your data in a notebook
 
@@ -491,7 +491,7 @@ with low confidence](./media/image48.png)
 
 9.  Look for the cleaned data under the **Data**.
 
-    ![](./media/image52.png)
+    ![](./media/img2.png)
 
     ::: danger
     **Important:** You can continue with the next exercise from here. But, if you are taking a break from the lab execution, please ensure to **stop** the compute instance and start it again when you resume from the break.
@@ -673,14 +673,12 @@ script.
 2.  From the left pane, select **Data** and select the
     **credit-card-data** .
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image66.png)
+    ![](./media/img3.png)
 
 3.  Under **Data sources** section, look for the **Datastore URI** value
     and copy it. Save it for use in the next step.
 
-    ![A screenshot of a computer Description automatically generated with
-medium confidence](./media/image67.png)
+    ![](./media/img4.png)
 
 4.  In the next cell, replace the
 
@@ -733,19 +731,14 @@ medium confidence](./media/image69.png)
     menu. A job is a grouping of many runs from a specified script or
     piece of code. Information for the run is stored under that job.
 
-    ![A screenshot of a computer Description automatically generated with
-medium confidence](./media/image71.png)
+    ![](./media/img5.png)
 
 3.  The **Overview** page first shows the **Status** under
     **Properties** pane to be **Running**.
 
 4.  The status changes to **Completed** once it is ready.
 
-    ![A screenshot of a computer Description automatically generated with
-medium confidence](./media/image72.png)
-
-    ![A screenshot of a computer Description automatically generated with
-medium confidence](./media/image73.png)
+    ![](./media/img6.png)
 
 5.  Select the **Metrics** pane to view the metrics.
 
@@ -869,8 +862,7 @@ generated](./media/image80.png)
 1.  From the left pane, select the **Endpoints**. Select the endpoint
     that we created, and click on **Delete**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image82.png)
+    ![](./media/img7.png)
 
 2.  Click on **Delete** on the confirmation dialog box.
 
@@ -878,9 +870,12 @@ generated](./media/image82.png)
 with low confidence](./media/image83.png)
 
 3.  Look for a notification on the successful deletion.
+   
 
-    ![A picture containing text, screenshot, font, line Description
-automatically generated](./media/image84.png)
+4.  You need to **stop** the running **compute** since we will not be using it now.
+
+    ![A screenshot of a computer Description automatically
+generated](./media/image18.png)
 
 **Summary**
 
