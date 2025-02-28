@@ -777,6 +777,8 @@ generated](./media/image73.png)
 
     ![A picture containing screenshot, software, line, text Description automatically generated](./media/image77.png)
 
+    Do not close this window to continue the next lab.
+    
 **Summary**
 
 This lab shows how the traditional model performance metrics (e.g., accuracy, recall, confusion matrix etc) are still very important. By combining RAI insights and traditional performance metric, the dashboard gives us a wholistic tool to analyze and debug the model on a more granular level.
