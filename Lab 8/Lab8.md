@@ -9,6 +9,10 @@ best prompt for RAG and to get evaluation metrics for RAG
 
 In this lab, you will learn how to create a QA dataset from your data.
 
+Lab type - Instructor-led
+
+Lab duration - 45 minutes
+
 ## Exercise 1: Create AOAI deployments 
 
 In this exercise, we will create the gpt-35-turbo models deployments
