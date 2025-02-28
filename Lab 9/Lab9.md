@@ -26,21 +26,19 @@ behavior is better in one cohort vs another cohort.
 
 2.  From the Azure portal home page, select **+ Create a resource**.
 
-![A screenshot of a computer Description automatically
+    ![A screenshot of a computer Description automatically
 generated](./media/image1.png)
 
 3.  On **Create a resource**, use the search bar to find +++**Azure
     Machine Learning+++**. Select **Azure Machine Learning under
     Marketplace**.
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image2.png)
+    ![A screenshot of a computer Description automatically generated](./media/image2.png)
 
 4.  Under **Marketplace**, click on **Create dropdown and select Azure
     Machine Learning**.
 
-> ![A screenshot of a software Description automatically
-> generated](./media/image3.png)
+    ![A screenshot of a software Description automatically generated](./media/image3.png)
 
 5.  Provide the following information to configure your new workspace:
 
@@ -49,190 +47,180 @@ generated](./media/image1.png)
     - **Resource group**: Select **Create New** and give the name as
       +++**RGForMLOps**+++
 
-> **Workspace Details:**
+    **Workspace Details:**
+    
+    - **Workspace name: +++AzuremlwsXX+++ (Substitute XX with a random
+      number to ensure uniqueness)**
+    
+    - **Region**: Select your nearest region (**North Central US** is
+      selected here)
 
-- **Workspace name: +++AzuremlwsXX+++ (Substitute XX with a random
-  number to ensure uniqueness)**
+    - **Container registry: Select Create new. Enter +++AzuremlcrXX+++** (Replace **XX** with a unique number)
 
-- **Region**: Select your nearest region (**North Central US** is
-  selected here)
+    Once you are done configuring the workspace, select **Review + Create**.
 
-&nbsp;
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image4.png)
 
-- **Container registry: Select Create new. Enter +++AzuremlcrXX+++**
-  (Replace **XX** with a unique number)
-
-> Once you are done configuring the workspace, select **Review +
-> Create**.
->
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image4.png)
->
-> ![A screenshot of a computer Description automatically
-> generated](./media/image5.png)
+    ![A screenshot of a computer Description automatically generated](./media/image5.png)
 
 6.  Once the Validation is passed, click on **Create**.
 
-![A screenshot of a computer Description automatically
+    ![A screenshot of a computer Description automatically
 generated](./media/image6.png)
 
 7.  Click on **Go to resource**, to view the new workspace.
 
-![A screenshot of a computer Description automatically generated with
+    ![A screenshot of a computer Description automatically generated with
 medium confidence](./media/image7.png)
 
 8.  Open the **cloud shell** by clicking on the cloud shell icon on the
     Azure portal.
 
-![A screenshot of a computer Description automatically
+    ![A screenshot of a computer Description automatically
 generated](./media/image8.png)
 
 9.  Select **Bash**.
 
-![A screenshot of a computer AI-generated content may be
+    ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image9.png)
 
 10. In the **Getting Started** page, select **Mount storage account**,
     select your **assigned subscription** and click on **Apply**.
 
-![A screenshot of a computer AI-generated content may be
+    ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image10.png)
 
 11. In the **Mount storage account** page, select **We will create a
     storage account for you** and click on **Next**.
 
-![A screenshot of a computer account AI-generated content may be
+    ![A screenshot of a computer account AI-generated content may be
 incorrect.](./media/image11.png)
 
 12. In Azure Cloud Shell command prompt, clone the **Diabetes Hospital
     Readmission** project github repository by executing the below
     command.
 
-> **!!git clone
-> <https://github.com/getazureready/RAI-Diabetes-Hospital-Readmission-classification>**!!
->
-> This will clone the contents of the repo locally.
->
-> ![A screenshot of a computer program AI-generated content may be
-> incorrect.](./media/image12.png)
+    !!git clone https://github.com/getazureready/RAI-Diabetes-Hospital-Readmission-classification!!
+
+    This will clone the contents of the repo locally.
+
+    ![A screenshot of a computer program AI-generated content may be incorrect.](./media/image12.png)
 
 13. Change to the project directory by executing the below command.
 
-**!!cd RAI-Diabetes-Hospital-Readmission-classification!!**
+    **!!cd RAI-Diabetes-Hospital-Readmission-classification!!**
 
-### Task 3: Login using Azure CLI
+### Task 2: Login using Azure CLI
 
 1.  From the cloud shell, execute the below command.
 
-**!!az login!!**
+    **!!az login!!**
 
-![A screenshot of a computer Description automatically generated with
+    ![A screenshot of a computer Description automatically generated with
 medium confidence](./media/image13.png)
 
 2.  Open the url in the console, and type in the code in the browser and
     continue the prompts to login.
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image14.png)
+    ![A screenshot of a computer Description automatically generated](./media/image14.png)
 
 3.  Once login is completed in the browser, back in the Cloud Shell,
     type **Enter** to accept the subscription name.
 
-![A screen shot of a computer AI-generated content may be
+   ![A screen shot of a computer AI-generated content may be
 incorrect.](./media/image15.png)
 
 4.  Set your environment default to the **created Resource group** and
     **Azure ML workspace**.
 
-Replace the placeholders \<Resource-group-name\> and \<Workspace-name\>
+    Replace the placeholders \<Resource-group-name\> and \<Workspace-name\>
 with the names of your Resource group and the Azure Machine Learning
 Workspace created in the last Task and then execute the below command.
 
-**!!az configure --defaults group="\<Resource-group-name\>"
-workspace="\<Workspace-name\>"!!**
+    !!az configure --defaults group="<Resource-group-name>" workspace="<Workspace-name>"!!
 
-**The command should look like this after replacing the values.**
+    The command should look like this after replacing the values.
 
-**az configure --defaults group="RGForMLOps"
-workspace="Azuremlws98899"**
+    **az configure --defaults group="RGForMLOps" workspace="Azuremlws98899"**
 
-![](./media/image16.png)
+    ![](./media/image16.png)
 
 ## **Exercise 2: Run jobs for training the model and creating the RAI dashboard**
 
 1.  Execute the below command to register the **training dataset** to
     the Azure Machine Learning workspace.
 
-> **!!az ml data create -f cloud/train_data.yml!!**
+    **!!az ml data create -f cloud/train_data.yml!!**
 
-The data asset gets created and the details are displayed on the cloud
+    The data asset gets created and the details are displayed on the cloud
 shell.
 
-![A screenshot of a computer AI-generated content may be
+    ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image17.png)
 
 2.  Execute the below command to register the **testing dataset** to the
     Azure Machine Learning workspace.
 
-> **!!az ml data create -f cloud/test_data.yml!!**
+    **!!az ml data create -f cloud/test_data.yml!!**
 
-![A screenshot of a computer AI-generated content may be
+    ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image18.png)
 
 3.  Create a **compute instance** for running the jobs. Then, copy the
     compute name at the end of the run to use later.
 
-Execute the below command, replacing XX in the computeraiXX with a
+    Execute the below command, replacing XX in the computeraiXX with a
 random number to create the compute.
 
-**!!az ml compute create --name computeraiXX --type computeinstance
+    **!!az ml compute create --name computeraiXX --type computeinstance
 –size Standard_E4ds_v4!!**
 
-**Note:** The Compute creation will take around 10 minutes to complete.
+    ::: secondary
+    **Note:** The Compute creation will take around 10 minutes to complete.
+    :::
 
-![A screenshot of a computer AI-generated content may be
+    ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image19.png)
 
-4.  On the Cloud Shell menu, click on **Editor**. This will ask for a
+5.  On the Cloud Shell menu, click on **Editor**. This will ask for a
     confirmation to move to the old
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image20.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image20.png)
 
 5.  Select **Confirm** in the **Switch to Classic Cloud Shell**
     confirmation dialog box.
 
-![A screen shot of a computer AI-generated content may be
+    ![A screen shot of a computer AI-generated content may be
 incorrect.](./media/image21.png)
 
 6.  On the Cloud Shell menu, click on the **Open editor** **{ }** pane
     to edit some of the files.
 
-> ![Open editor](./media/image22.png)
+    ![Open editor](./media/image22.png)
 
 7.  Click on
     the **RAI-Diabetes-Hospital-Readmission-classification** folder to
     expand the directory.
 
-![Expand directory](./media/image23.png)
+    ![Expand directory](./media/image23.png)
 
 8.  Navigate to the **cloud/training_job.yml** file. Then replace the
     placeholder for the **compute name** with your **compute instance
     name** that you created. (**computeraiXX**)
 
-![Training job update](./media/image24.png)
+    ![Training job update](./media/image24.png)
 
 9.  Right-click anywhere in the file, then select the **Save** option to
     save the file. 
 
-![A screenshot of a computer program Description automatically generated
+    ![A screenshot of a computer program Description automatically generated
 with medium confidence](./media/image25.png)
 
 10. Next, navigate to the **cloud/rai_dashboard_pipeline.yml** file.
     Then update the placeholder for the compute name with your **compute
     instance name**.
 
-![Rai pipeline update](./media/image26.png)
+    ![](./media/image26.png)
 
 11. Right-click anywhere in the file, then select the **Save** option to
     save the file.
@@ -240,7 +228,7 @@ with medium confidence](./media/image25.png)
 12. Right-click anywhere in the file, then select the **Quit** option to
     close the editor window.
 
-![A screenshot of a computer program Description automatically generated
+    ![A screenshot of a computer program Description automatically generated
 with medium confidence](./media/image27.png)
 
 13. Back at the Cloud Shell command prompt, submit the job to train the
@@ -248,128 +236,109 @@ with medium confidence](./media/image27.png)
     during the training. Paste the below code block to the Cloud Shell
     and click on **Enter** to execute it.
 
-> **run_id=$(az ml job create --name my_training_job -f
-> cloud/training_job.yml --query name -o tsv)**
->
-> **\# wait for job to finish while checking for status**
->
-> **if \[\[ -z "$run_id" \]\]**
->
-> **then**
->
-> **echo "Job creation failed"**
->
-> **exit 3**
->
-> **fi**
->
-> **status=$(az ml job show -n $run_id --query status -o tsv)**
->
-> **if \[\[ -z "$status" \]\]**
->
-> **then**
->
-> **echo "Status query failed"**
->
-> **exit 4**
->
-> **fi**
->
-> **running=("Queued" "Starting" "Preparing" "Running" "Finalizing")**
->
-> **while \[\[ ${running\[\*\]} =~ $status \]\]**
->
-> **do**
->
-> **sleep 8**
->
-> **status=$(az ml job show -n $run_id --query status -o tsv)**
->
-> **echo $status**
->
-> **done**
->
-> **Note:** If this script does not get pasted properly, paste it to a
-> Notepad and copy from there to the CloudShell.
->
-> **Note:** The execution of this script should take around 3 to 5
-> minutes.
->
-> ![A screenshot of a computer Description automatically generated with
-> medium confidence](./media/image28.png)
->
-> ![A screenshot of a computer Description automatically
-> generated](./media/image29.png)
+    ```
+    run_id=$(az ml job create --name my_training_job -f cloud/training_job.yml --query name -o tsv)
+    
+    # wait for job to finish while checking for status
+    if [[ -z "$run_id" ]]
+    then
+      echo "Job creation failed"
+      exit 3
+    fi
+    status=$(az ml job show -n $run_id --query status -o tsv)
+    if [[ -z "$status" ]]
+    then
+      echo "Status query failed"
+      exit 4
+    fi
+    running=("Queued" "Starting" "Preparing" "Running" "Finalizing")
+    while [[ ${running[*]} =~ $status ]]
+    do
+      sleep 8 
+      status=$(az ml job show -n $run_id --query status -o tsv)
+      echo $status
+    done
+    ```
+    ::: secondary
+    
+    **Note:** If this script does not get pasted properly, paste it to a Notepad and copy from there to the CloudShell.
+    
+    :::
+
+    ::: secondary
+    
+    **Note:** The execution of this script should take around 3 to 5 minutes.
+
+    :::
+
+    ![A screenshot of a computer Description automatically generated with medium confidence](./media/image28.png)
+
+    ![A screenshot of a computer Description automatically generated](./media/image29.png)
 
 14. Optionally, you can check for the status of the Running job from the
     **Azure Machine Learning Studio (**<https://ml.azure.com/>**)** -\>
     **Jobs**
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image30.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image30.png)
 
 15. After the training job has completed successfully, register the
     model to the Azure Machine Learning workspace. Execute the below
     command to do that.
 
-**!!az ml model create --name rai_hospital_model --path
-"azureml://jobs/$run_id/outputs/model_output" --type mlflow_model!!**
+    !!az ml model create --name rai_hospital_model --path "azureml://jobs/$run_id/outputs/model_output" --type mlflow_model!!
 
-> This command registers the model to the AML workspace and provides the
-> details in the cloud shell, as in the screenshots below.
->
-> ![A screenshot of a computer program AI-generated content may be
-> incorrect.](./media/image31.png)
->
-> ![A computer screen shot of a black background AI-generated content
-> may be incorrect.](./media/image32.png)
+    This command registers the model to the AML workspace and provides the details in the cloud shell, as in the screenshots below.
+
+    ![A screenshot of a computer program AI-generated content may be incorrect.](./media/image31.png)
+
+    ![A computer screen shot of a black background AI-generated content may be incorrect.](./media/image32.png)
 
 16. Submit the job pipeline to create the **RAI dashboard**. Execute the
     below command to do that.
 
-!!az ml job create --file cloud/rai_dashboard_pipeline.yml!!
+    !!az ml job create --file cloud/rai_dashboard_pipeline.yml!!
 
-This command submits the job and the cloud shell is populated with the
+    This command submits the job and the cloud shell is populated with the
 initial stage of the pipeline which is the **Preparing** state.
 
-![A picture containing text, screenshot, software Description
+    ![A picture containing text, screenshot, software Description
 automatically generated](./media/image33.png)
 
-![A picture containing text, screenshot, software, font Description
+    ![A picture containing text, screenshot, software, font Description
 automatically generated](./media/image34.png)
 
-**Note:** This process takes 10 to 15 minutes to complete.
-
-17. Log into **Azure Machine Learning studio** at
-    <https://ml.azure.com/> to monitor the pipeline job for creating the
+    ::: secondary
+    **Note:** This process takes 10 to 15 minutes to complete.
+    :::
+    
+18. Log into **Azure Machine Learning studio** at
+    !!https://ml.azure.com/!! to monitor the pipeline job for creating the
     RAI dashboard.
 
-18. Select **Pipelines**. To view the progression of the pipeline job
+19. Select **Pipelines**. To view the progression of the pipeline job
     creating the RAI dashboard, click on the job **Display name**.
 
-> ![A screenshot of a computer Description automatically generated with
-> medium confidence](./media/image35.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](./media/image35.png)
 
 19. The experiment will be in the **Running** state.
 
-![A screenshot of a computer Description automatically
+    ![A screenshot of a computer Description automatically
 generated](./media/image36.png)
 
 20. The status changes to **Completed** once it is done and the RAI
     dashboard is created.
 
-![A screenshot of a computer Description automatically generated with
+    ![A screenshot of a computer Description automatically generated with
 medium confidence](./media/image37.png)
 
 21. Click on the **Models** tab on the left-hand navigation. Then click
     on the name of the model to open the details page.
 
-> ![](./media/image38.png)
+    ![](./media/image38.png)
 
 22. Select the **Responsible AI** option in the top menu.
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image39.png)
+    ![A screenshot of a computer Description automatically generated](./media/image39.png)
 
 23. Now, you're ready to start using the **RAI dashboard**.
 
@@ -390,13 +359,12 @@ model is performing poorly in some cohorts and not in others.
 
 1.  Click on the name **Diabetes Hospital Readmission.**
 
-> ![A screenshot of a computer Description automatically generated with
-> medium confidence](./media/image40.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](./media/image40.png)
 
 2.  Ensure that your **compute** is selected and it is in the
     **Running** state.
 
-![A screenshot of a computer AI-generated content may be
+    ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image41.png)
 
 #### **Task 1.1: Identify and create a cohort for the tree path with the highest errors**
@@ -411,7 +379,7 @@ evaluating the model.
 2.  In our case the tree path with the darkest red color is the leaf
     node that is second from the bottom right.
 
-![](./media/image42.png)
+    ![](./media/image42.png)
 
 3.  **Double click** on this **node** to select the **entire path**
     leading up to the node. This highlights the path and displays the
@@ -421,16 +389,13 @@ evaluating the model.
     as a new cohort** button on the upper right-hand side of the Error
     Analysis section.
 
-> ![A screenshot of a computer Description automatically generated with
-> medium confidence](./media/image43.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](./media/image43.png)
 
-5.  Enter the **Cohort name** as **!!Err: Prior_Inpatient \>0; Num_meds
-    \>11.50 & \<= 21.50!!**
+5.  Enter the **Cohort name** as **!!Err: Prior_Inpatient >0; Num_meds >11.50 & <= 21.50!!**
 
-Click on **Save.**
+    Click on **Save.**
 
-> ![A screenshot of a computer Description automatically generated with
-> medium confidence](./media/image44.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](./media/image44.png)
 
 #### **Task 1.2: Identify and create a cohort for the tree path with the least errors**
 
@@ -442,27 +407,24 @@ side of the tree, is the path of the tree with the least errors.
 
 1.  **Double-click** on the node.
 
-> ![A screenshot of a computer Description automatically generated with
-> medium confidence](./media/image45.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](./media/image45.png)
 
 2.  Click on **Save as a new cohort**. The **Filter** in this dataset
     is: num_lab_procedures \<= 56.50, number_diagnoses \<= 6.50,
     prior_inpatient \<= 0.00.
 
-> ![A screenshot of a computer Description automatically generated with
-> medium confidence](./media/image46.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](./media/image46.png)
 
 3.  **Name** the cohort: **!!Prior_Inpatient = 0; num_diagnoses \<=
     6.50; lab_procedures \<= 56.50!!** and click on **Save**.
 
-> ![A screenshot of a computer Description automatically generated with
-> medium confidence](./media/image47.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](./media/image47.png)
 
 #### **Task 1.3: Use the Feature List to identify the top feature contributing to model errors**
 
 1.  Click on **Feature list**.
 
-![](./media/image48.png)
+    ![](./media/image48.png)
 
 2.  The list is sorted based on contribution of the features to the
     errors. The higher a feature is on this list, the higher its
@@ -495,8 +457,7 @@ patients are driving the model to perform poorly.
 1.  Select **Heat map** under **Error Analysis**. Select Shift on the
     confirmation dialog.
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image49.png)
+    ![A screenshot of a computer Description automatically generated](./media/image49.png)
 
 2.  Under the Heat Map tab, select **Age** in the **Rows: Feature
     1** drop-down menu to see what factor it plays in the model's
@@ -506,15 +467,13 @@ patients are driving the model to perform poorly.
     built-in intelligence to divide the feature into different cells
     with the possible conditions.
 
-> ![A screenshot of a computer Description automatically generated with
-> medium confidence](./media/image50.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](./media/image50.png)
 
 2.  **Hover** your mouse over each cell, you can see the number of
     correct vs incorrect predictions, error coverage and error rate for
     the data group represented in the cell.
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image51.png)
+    ![A screenshot of a computer Description automatically generated](./media/image51.png)
 
 3.  The cell with **Over 60 years** has **536** correct
     and **126** incorrect model predictions. The error coverage
@@ -527,8 +486,7 @@ patients are driving the model to perform poorly.
 5.  The cell with* ***30 years or younger*** *has **17** correct
     and **1** incorrect model predictions.
 
-> We are going to create cohorts for each age group for further analysis
-> in the next lab.
+    We are going to create cohorts for each age group for further analysis in the next lab.
 
 #### ***Task 2.1: Create Cohorts based on the age groups***
 
@@ -537,39 +495,36 @@ patients are driving the model to perform poorly.
 
 2.  Click on **Save as a new cohort**.
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image52.png)
+    ![A screenshot of a computer Description automatically generated](./media/image52.png)
 
 3.  In the Save as a new cohort dialog, enter
 
     - Cohort name - **!!Age==Over 60 year!!**
 
-Click on **Save**.
+    Click on **Save**.
 
-![A screenshot of a computer Description automatically
+    ![A screenshot of a computer Description automatically
 generated](./media/image53.png)
 
 4.  Repeat the steps 2 and 3, to create a cohort for each of the other
     two Age cells. Ensure that when you select a Age group, you deselect
     the other ones and that only that age group is selected.
 
-- **Cohort \#4:** Name - **!!Age == 30–60 years!!**
-
-- **Cohort \#5:** Name - **!!Age \<= 30 years!!**
+    - **Cohort #4:** Name - **!!Age == 30–60 years!!**
+    
+    - **Cohort #5:** Name - **!!Age <= 30 years!!**
 
 ### Task 3: View the cohorts lists
 
 1.  Click on the **Settings** gear icon on the upper right-hand corner
     of the Error Analysis section.
 
-> ![A screenshot of a computer Description automatically generated with
-> medium confidence](./media/image54.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](./media/image54.png)
 
 2.  This will open a **Cohort Settings** **window pane** with the list
     of all the cohorts you created.
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image55.png)
+    ![A screenshot of a computer Description automatically generated](./media/image55.png)
 
 3.  Close the settings window.
 
@@ -587,28 +542,27 @@ behavior is better in one cohort vs another cohort.
 1.  Scroll down below the Error Analysis to find the Model Overview
     section.
 
-![A screenshot of a computer Description automatically
+    ![A screenshot of a computer Description automatically
 generated](./media/image56.png)
 
 2.  Under Model Overview, select the **Dataset Cohorts** pane. This
     displays the different cohorts created in a table with the model
     metrics.
 
-> ![A screenshot of a computer Description automatically generated with
-> medium confidence](./media/image57.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](./media/image57.png)
 
 3.  Compare the cohort with the most errors **Err: Prior_Inpatient \> 0;
     Num_Meds \> 11 and ≤ 21.50** verse the least errors
     **Prior_inpatient = 0; num_diagnose ≤ 6.50; lab_procedures \<
     56.50.**
 
-![A screenshot of a computer Description automatically generated with
+    ![A screenshot of a computer Description automatically generated with
 medium confidence](./media/image58.png)
 
 4.  Hover the mouse over the box plot line on the chart to see the
     measurement details.
 
-![A screenshot of a computer Description automatically
+    ![A screenshot of a computer Description automatically
 generated](./media/image59.png)
 
 5.  Observe that the accuracy score for the **erroneous cohort** is
@@ -618,15 +572,14 @@ generated](./media/image59.png)
     patients that will not be readmitted as readmitted in 30 days back
     to the hospital.
 
-> ![A red line in a white sheet Description automatically
-> generated](./media/image60.png)
+    ![A red line in a white sheet Description automatically generated](./media/image60.png)
 
 6.  Next, look at the metrics for the **cohort** with the **least
     errors** has an accuracy score of 0.94, which is far better than the
     overall accuracy score of the model with all the data. However, this
     cohort also has a low **False positive** rate at **0**.
 
-![A picture containing text, screenshot, line, number Description
+    ![A picture containing text, screenshot, line, number Description
 automatically generated](./media/image61.png)
 
 ### Task 2: Examine the Probability distribution chart
@@ -655,8 +608,7 @@ automatically generated](./media/image61.png)
     probability of patients not readmitted has a median of 0.90 and
     upper quartile of 0.986.
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image62.png)
+    ![A screenshot of a computer Description automatically generated](./media/image62.png)
 
 7.  To change the chart to show the probability of patients being
     Readmitted for the 3 cohorts, click on the **Choose Label** button
@@ -667,14 +619,12 @@ automatically generated](./media/image61.png)
 
 9.  Then click on the **Apply** button.
 
-> ![A screenshot of a computer Description automatically generated with
-> medium confidence](./media/image63.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](./media/image63.png)
 
 10. Compare the probability of patients being Readmitted for the 3
     cohorts
 
-> ![A screenshot of a graph Description automatically generated with low
-> confidence](./media/image64.png)
+    ![A screenshot of a graph Description automatically generated with low confidence](./media/image64.png)
 
 9.  You see that the 3 cohort have a probability of being readmitted
     less than 0.55. The cohort with the least number of model errors has
@@ -688,17 +638,17 @@ switching to the Metric visualizations pane. 
 
 1.  Click on the Metric visualizations tab.
 
-> ![A screenshot of a computer Description automatically generated with
-> medium confidence](./media/image65.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](./media/image65.png)
 
 2.  To choose another metric, click on the **Choose metric** on the
     x-axis to choose **Precision score** from the list of other
     available metrics. Then click on the **Apply** button. 
 
-> **Note**: Since the trained model is a classification problem, the RAI
-> dashboard will display only classification metrics.
->
-> ![](./media/image66.png)
+    ::: secondary
+    **Note**: Since the trained model is a classification problem, the RAI dashboard will display only classification metrics.
+    :::
+    
+    ![](./media/image66.png)
 
 3.  From reviewing the chart, you will see that the model performance
     for all test data cohort and erroneous cohort is correct at ~70% of
@@ -709,15 +659,14 @@ switching to the Metric visualizations pane. 
     of diagnoses is less than 7. This is consistent with the accuracy
     score.
 
-![A screenshot of a computer Description automatically generated with
+    ![A screenshot of a computer Description automatically generated with
 medium confidence](./media/image67.png)
 
 5.  Finally, change the metric to **Recall** to see how well the model
     was able to correctly predict that the patients in the cohorts will
     be readmitted back in the hospital in 30 days.
 
-> ![A screenshot of a computer Description automatically generated with
-> medium confidence](./media/image68.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](./media/image68.png)
 
 6.  The recall shows that the **model's prediction** was **correct less
     than 25%** of the time for all the cohorts for patients being
@@ -725,7 +674,7 @@ medium confidence](./media/image67.png)
     correct a majority of the time when trying to predict patients that
     will be readmitted within 30 days.
 
-![A screenshot of a graph Description automatically generated with low
+    ![A screenshot of a graph Description automatically generated with low
 confidence](./media/image69.png)
 
 ### Task 4: Look at the Confusion Matrix
@@ -737,7 +686,6 @@ within 30 days vs Not Readmitted.
 
 1.  Click on the **Confusion matrix** tab.
 
-&nbsp;
 
 2.  You will observe that the **model** is performing **better** with
     patient that are **Not Readmitted** compare to **Readmitted**.
@@ -747,16 +695,15 @@ within 30 days vs Not Readmitted.
     24 patients correctly to be Readmitted back to the hospital in \< 30
     days.
 
-- The number of True Positive (TP) is: **802**
+    - The number of True Positive (TP) is: **802**
+    
+    - The number of False Negative (FN) is: **159**
+    
+    - The number of False Positive (FP) is: **9**
+    
+    - The number of True Negative (TN) is: **24**
 
-- The number of False Negative (FN) is: **159**
-
-- The number of False Positive (FP) is: **9**
-
-- The number of True Negative (TN) is: **24**
-
-> ![A screenshot of a computer Description automatically generated with
-> medium confidence](./media/image70.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](./media/image70.png)
 
 ## **Exercise 2: Feature Cohort**
 
@@ -772,8 +719,7 @@ there are issues. For this lab, we'll only analyze *Prior_Inpatient*.
     select the **prior_inpatient** checkbox. This will display 3
     different feature cohorts and the model performance metrics.
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image71.png)
+    ![A screenshot of a computer Description automatically generated](./media/image71.png)
 
 3.  The **prior_inpatient** ***\< 3*** cohort has a sample size of
     **943**. This means a majority of patients in the test data were
@@ -788,8 +734,7 @@ there are issues. For this lab, we'll only analyze *Prior_Inpatient*.
     hospitalization greater than or equal to 6 days. The **model
     accuracy** of **0.75** for this cohort is ok.
 
-> ![A screenshot of a computer Description automatically generated with
-> medium confidence](./media/image72.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](./media/image72.png)
 
 ### Task 1: Feature probability distribution
 
@@ -800,7 +745,7 @@ Similar to the Dataset cohort, you have the ability to view the
     prior_inpatient hospitalizations, the more likely the patient was
     not going to be readmitted in 30 days. 
 
-![A screenshot of a computer Description automatically
+    ![A screenshot of a computer Description automatically
 generated](./media/image73.png)
 
 ### Task 2: Feature Metrics visualizations
@@ -809,23 +754,20 @@ generated](./media/image73.png)
     **Choose metric** button. Then select the **Precision score**
     metric.
 
-> ![A screenshot of a computer Description automatically generated with
-> medium confidence](./media/image74.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](./media/image74.png)
 
 2.  You see that the precision score for patients with **prior_inpatient
     \< 3** is 0.40, which is very bad. This means that of all the
     predictions that the model made, only 40% were correct for this
     cohort.
 
-> ![A blue and white bar graph Description automatically
-> generated](./media/image75.png)
+    ![A blue and white bar graph Description automatically generated](./media/image75.png)
 
 3.  The precision score for the other 2 cohorts are good.
 
 4.  Next, select **Recall score** metric for the x-axis.
 
-> ![A screenshot of a computer Description automatically generated with
-> medium confidence](./media/image76.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](./media/image76.png)
 
 5.  On the contrary, you'll see the recall score for patients
     with **prior_inpatient \< 3** is 0.013. Meaning, for a majority of
@@ -833,13 +775,8 @@ generated](./media/image73.png)
     predicting whether the patient will be readmitted within 30 days or
     not.
 
-> ![A picture containing screenshot, software, line, text Description
-> automatically generated](./media/image77.png)
->
-> **Summary**
->
-> This lab shows how the traditional model performance metrics (e.g.,
-> accuracy, recall, confusion matrix etc) are still very important. By
-> combining RAI insights and traditional performance metric, the
-> dashboard gives us a wholistic tool to analyze and debug the model on
-> a more granular level.
+    ![A picture containing screenshot, software, line, text Description automatically generated](./media/image77.png)
+
+**Summary**
+
+This lab shows how the traditional model performance metrics (e.g., accuracy, recall, confusion matrix etc) are still very important. By combining RAI insights and traditional performance metric, the dashboard gives us a wholistic tool to analyze and debug the model on a more granular level.
