@@ -7,6 +7,10 @@ Azure Machine Learning studio. You learn how to enable prompt flow in
 your Azure Machine Learning workspace, create and develop a prompt flow,
 test and evaluate the flow, and then deploy it to production.
 
+Lab type - Instructor-led
+
+Lab duration - 75 minutes
+
 ## Task 1: Getting the Azure resources ready
 
 ### Task 1.1: Create an Azure Machine Learning workspace
