@@ -12,6 +12,8 @@ model’s performance due to problematic data distribution.
 
 ## **Exercise 1: Data Analysis: Table view**
 
+Continue with the Responsible AI dashboard from the last lab.
+
 The Table view helps in visualizing all the features and rows of the
 data in a selected cohort. Since we want to analyze the data for when
 the model is performing poorly, switch the cohort for "All data"
