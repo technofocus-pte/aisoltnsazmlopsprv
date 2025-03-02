@@ -278,7 +278,8 @@ medium confidence](./media/image27.png)
     ![A screenshot of a computer Description automatically
 generated](./media/image28.png)
 
-8.  This opens the uploaded Notebook.
+8.  Once the file upload is successful, it gets opened in the studio,
+    connected automatically to the Compute(cpu-cluster-fs) that is in Running state.
 
     ![A screenshot of a computer Description automatically
 generated](./media/image29.png)
@@ -346,9 +347,9 @@ with low confidence](./media/image35.png)
     ![A screenshot of a computer Description automatically generated with
 medium confidence](./media/image38.png)
 
-7.  Replace \< RESOURCE_GROUP\> with the name of the Resource group you created(!!**RGForMLOps**!!)..
+7.  Replace \< RESOURCE_GROUP\> with the name of the Resource group you created(!!**RGForMLOps**!!).
 
-8.  Replace \<AML_WORKSPACE_NAME\> with !!**AzuremlwsXX!!(XX being the
+8.  Replace \<AML_WORKSPACE_NAME\> with !!**AzuremlwsXXXX!!(XXXX being the
     random number that you had used while creating the workspace).**
     ::: danger
     **Important:** Save the **Subscription ID**, **Resource group name** and the **Workspace name** for usage throughout the labs.
@@ -399,7 +400,7 @@ medium confidence](./media/image41.png)
 #### Task 2.4: Access your data in a notebook
 
 1.  Back in the notebook, execute the cell with the **%pip** command to
-    install the **azureml-fsspec **Python library in your **Jupyter**
+    install the **azureml-fsspec** Python library in your **Jupyter**
     kernel.
 
     ![A screenshot of a computer program Description automatically generated
@@ -468,8 +469,7 @@ low confidence](./media/image47.png)
     ::: danger
     **Important:**
 
-    This Python code cell sets **name** and **version** values for the data asset it creates. As a result, the code in this cell will fail if executed more than once, without a change to these values. Fixed **name** and **version** values offer a way to pass values that work for specific situations, without concern for auto-generated or
-randomly-generated values.
+    This Python code cell sets **name** and **version** values for the data asset it creates. As a result, the code in this cell will fail if executed more than once, without a change to these values. Fixed **name** and **version** values offer a way to pass values that work for specific situations, without concern for auto-generated or randomly-generated values.
     :::
 
 8.  The cleaned parquet file is the latest version data source. The code
@@ -493,10 +493,11 @@ with low confidence](./media/image48.png)
 
     ::: danger
     **Important:** You can continue with the next exercise from here. But, if you are taking a break from the lab execution, please ensure to **stop** the compute instance and start it again when you resume from the break.
+
+    ![A screenshot of a computer Description automatically generated with medium confidence](./media/image53.png)
     :::
     
-    ![A screenshot of a computer Description automatically generated with
-medium confidence](./media/image53.png)
+
 
 **Exercise summary**
 
@@ -642,8 +643,7 @@ automatically generated](./media/image63.png)
 3.  The script in the next cell handles the preprocessing of the data,
     splitting it into test and train data. It then consumes this data to
     train a tree-based model and return the output
-    model. [MLFlow](https://mlflow.org/docs/latest/tracking.html) will
-    be used to log the parameters and metrics during our pipeline run.
+    model. MLFlow will be used to log the parameters and metrics during our pipeline run.
 
 4.  Execute the cell and ensure that it gets executed successfully with
     the output,
