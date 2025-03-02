@@ -32,8 +32,10 @@ Azure Machine Learning Studio.
 
 #### Task 2.1: Register required Resource Providers 
 
-1.  Sign in to the Azure portal at !!https://portal.azure.com!! using the login credentials from the **Home** tab of the VM.
-    
+1.  Open a browser and login to the Azure portal at !!https://portal.azure.com!! using the login credentials from the **Home** tab of the VM.
+
+   ![](./media/img39.png)
+   
 2.	Select **Subscriptions** and select your assigned subscription. 
 
    ![](./media/image85.png)
@@ -85,17 +87,17 @@ generated](./media/image4.png)
 
     **Workspace Details:**
     
-    - **Workspace name:** !!**AzuremlwsXX**!! **(Substitute XX with a random
+    - **Workspace name:** !!**AzuremlwsXXXX**!! **(Substitute XXXX with a random
       number to ensure uniqueness)**
     
     - **Region**: Select your nearest region **(North Central US** is
       selected here)
 
-    - **Container registry: Select Create new. Enter !!azuremlcrXX!!**
-  (Replace **XX** with a unique number)
+    - **Container registry: Select Create new. Enter !!azuremlcrXXXX!!**
+  (Replace **XXXX** with a unique number)
 
     ::: secondary
-    **Note:** The screenshots will not have the **XX**(Random number) since they were not used while testing. Please ensure to add a unique number at the end wherever the guide says so.
+    **Note:** The screenshots will not have the **XXXX**(Random number) since they were not used while testing. Please ensure to add a unique number at the end wherever the guide says so.
     :::
     
     ![A screenshot of a computer Description automatically
@@ -172,10 +174,7 @@ generated](./media/image16.png)
 generated](./media/image17.png)
 
     ::: danger
-    **Important:** Once the Compute is up and running you can continue with
-the next tasks. But, if you are taking a break from the lab execution,
-please ensure to **stop** the compute instance and start it again when
-you start after the break.
+    **Important:** Once the Compute is up and running you can continue with the next tasks. But, if you are taking a break from the lab execution, please ensure to **stop** the compute instance and start it again when you start after the break.
     :::
     
     ![A screenshot of a computer Description automatically
@@ -219,7 +218,7 @@ Learning project workflow.**
 
 ![](./media/image19.png)
 
-### Task 1: Getting the Azure resources ready
+### Task 1: Upload Notebook
 
 ::: danger
 **Important:** Ensure that the compute that we created in the last
@@ -227,8 +226,6 @@ exercise is up and running. If you are taking a break from the lab
 execution, please ensure to **stop** and start it again when you start
 after the break.
 :::
-
-#### Task 1.1: Upload Notebook 
 
 1.  From the Azure Machine Learning studio, once the compute is up and
     running, select **Notebooks** option from the left pane.
