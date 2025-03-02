@@ -175,10 +175,11 @@ generated](./media/image17.png)
 
     ::: danger
     **Important:** Once the Compute is up and running you can continue with the next tasks. But, if you are taking a break from the lab execution, please ensure to **stop** the compute instance and start it again when you start after the break.
+
+     ![A screenshot of a computer Description automatically generated](./media/image18.png)
     :::
     
-    ![A screenshot of a computer Description automatically
-generated](./media/image18.png)
+
 
 **Exercise summary:**
 
