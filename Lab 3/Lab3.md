@@ -45,13 +45,11 @@ generated](./media/image4.png)
 5.  Added role assignment message is obtained once the assignment is
     done.
 
-6.  Repeat the same set of steps to add the roles !!**Storage Blob Data
-    Reader**!! and !!**Storage Blob Data Contributor**!!.
+6.  Repeat the same set of steps to add the roles !!**Storage Blob Data Reader**!! and !!**Storage Blob Data Contributor**!!.
 
 ## Exercise 2: Develop a feature set and register with managed feature store
 
-This tutorial is the first part of the managed feature store tutorial
-series. Here, you learn how to:
+In this exercise, you learn how to:
 
 - Create a new, minimal feature store resource.
 
@@ -165,8 +163,7 @@ generated](./media/image17.png)
     ![A screenshot of a computer program Description automatically
 generated](./media/image18.png)
 
-11. Click on **+ Code** to add a cell. Add this content !!pip install
-    azure-ai-ml==1.23.1!! and execute the cell to install the ai-ml
+11. Click on **+ Code** to add a cell. Add this content !!pip install azure-ai-ml==1.23.1!! and execute the cell to install the ai-ml
     1.23.1 version.
 
     ![A screenshot of a computer AI-generated content may be
@@ -427,8 +424,7 @@ generated](./media/image17.png)
     ![A screenshot of a computer program Description automatically
 generated](./media/image18.png)
 
-6.  Click on **+ Code** to add a cell. Add this content !!pip install
-    azure-ai-ml==1.23.1!! and execute the cell to install the ai-ml
+6.  Click on **+ Code** to add a cell. Add this content !!pip install azure-ai-ml==1.23.1!! and execute the cell to install the ai-ml
     1.23.1 version.
 
     ![A screenshot of a computer AI-generated content may be
@@ -565,7 +561,9 @@ on changes to the feature-retrieval spec in the source repository.
 3.	In **line 20** of the same file, update the **feature retrieval version** to **1.1.0**.
 
       ![](./media/img16.png)
-  	
+
+4.	**Save** and **close** the file and navigate back to the Notebook.
+   
 4.  **Execute** the next cell to **run the training pipeline.**
 
     ![A screenshot of a computer Description automatically
