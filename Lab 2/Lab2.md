@@ -217,7 +217,7 @@ medium confidence](./media/image20.png)
     ![A screenshot of a computer Description automatically generated with medium confidence](./media/image27.png)
 
 10. **Create success** message gets displayed on the **Select a
-    datastore** page**.** Select the **sodadatastore** that got created.
+    datastore** page. Select the **sodadatastore** that got created.
     Click on **Next**.
 
     ![A screenshot of a computer Description automatically generated](./media/image28.png)
@@ -269,7 +269,7 @@ medium confidence](./media/image20.png)
 
 20. **Success: soda data labelling project created successfully. Project
     is initializing** message gets displayed on the Data Labelling
-    screen. Click on the **soda** project**.**
+    screen. Click on the **soda** project.
 
     ![A screenshot of a computer Description automatically generated with medium confidence](./media/image38.png)
 
@@ -318,7 +318,7 @@ medium confidence](./media/image20.png)
 
 29. Click on **Export.**
 
-  ![A screenshot of a graph Description automatically generated with low confidence](./media/image47.png)
+    ![A screenshot of a graph Description automatically generated with low confidence](./media/image47.png)
 
 30. On the **Export data** pane, select the
 
