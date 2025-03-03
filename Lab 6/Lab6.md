@@ -324,36 +324,7 @@ medium confidence](./media/image46.png)
     ![A screenshot of a computer Description automatically
 generated](./media/image47.png)
 
-## Exercise 7: Load the best model and try predictions
-
-Loading the models locally assume that you are running the notebook in
-an environment compatible with the model. The list of dependencies that
-is expected by the model is specified in the MLFlow model produced by
-AutoML (in the 'conda.yaml' file within the mlflow-model folder).
-
-Since the AutoML model was trained remotelly in a different environment
-with different dependencies to your current local conda environment
-where you are running this notebook, if you want to load the model you
-have several options:
-
-1.  A recommended way to locally load the model in memory and try
-    predictions is to create a new/clean conda environment with the
-    dependencies specified in the conda.yaml file within the MLFlow
-    model's folder, then use MLFlow to load the model and call
-    .predict() as explained in the
-    notebook **mlflow-model-local-inference-test.ipynb** in this same
-    folder.
-
-2.  You can install all the packages/dependencies specified in
-    conda.yaml into your current conda environment you used for using
-    Azure ML SDK and AutoML. MLflow SDK also have a method to install
-    the dependencies in the current environment. However, this option
-    could have risks of package version conflicts depending on what's
-    installed in your current environment.
-
-3.  You can also use: mlflow models serve -m 'xxxxxxx'
-
-## Exercise 8: Clean up the resources
+## Exercise 7: Clean up the resources
 
 1.  From the Azure portal, select the Resource group **RGForMLOps** and
     select **Delete resource group**.
