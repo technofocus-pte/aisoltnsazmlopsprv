@@ -415,8 +415,8 @@ medium confidence](./media/image45.png)
 
     | Field | Value |
     |:---|:------|
-    | Deployment name | +++my-automl-deploy+++ |
-    | Deployment description | +++My first automated machine learning experiment deployment+++ |
+    | Deployment name | !!my-automl-deploy!! |
+    | Deployment description | !!My first automated machine learning experiment deployment!! |
     | Compute type | Select Azure Container Instance (ACI) |
     | Enable authentication | Disable. |
     | Use custom deployments | Disable. Allows for the default driver file (scoring script) and environment file to be auto-generated. |
