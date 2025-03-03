@@ -83,7 +83,7 @@ generated](./media/image9.png)
 
 ### **Task 2: Retrieve the Storage account key**
 
-1.  From the Azure portal, (!\!<https://portal.azure.com>!!) home page,
+1.  From the Azure portal, (!!https://portal.azure.com!!) home page,
     open the Resource group and click on the **Storage account
     (azuermlwsXXXXXX).**
 
