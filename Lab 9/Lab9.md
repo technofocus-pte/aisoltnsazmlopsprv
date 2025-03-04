@@ -21,7 +21,7 @@ behavior is better in one cohort vs another cohort.
 
 ### Task 1: Create the Azure resources
 
-1.  Sign in to Azure portal – +++**https://portal.azure.com**+++ using
+1.  Sign in to Azure portal – !!**https://portal.azure.com**!! using
     the credentials from the **Resources** tab.
 
 2.  From the Azure portal home page, select **+ Create a resource**.
@@ -29,8 +29,7 @@ behavior is better in one cohort vs another cohort.
     ![A screenshot of a computer Description automatically
 generated](./media/image1.png)
 
-3.  On **Create a resource**, use the search bar to find +++**Azure
-    Machine Learning+++**. Select **Azure Machine Learning under
+3.  On **Create a resource**, use the search bar to find !!**Azure Machine Learning**!!. Select **Azure Machine Learning under
     Marketplace**.
 
     ![A screenshot of a computer Description automatically generated](./media/image2.png)
@@ -45,17 +44,17 @@ generated](./media/image1.png)
     - **Subscription**: Select your **assigned Azure subscription**
 
     - **Resource group**: Select **Create New** and give the name as
-      +++**RGForMLOps**+++
+      !!**RGForMLOps**!!
 
     **Workspace Details:**
     
-    - **Workspace name: +++AzuremlwsXX+++ (Substitute XX with a random
+    - **Workspace name: !!AzuremlwsXX!! (Substitute XX with a random
       number to ensure uniqueness)**
     
     - **Region**: Select your nearest region (**North Central US** is
       selected here)
 
-    - **Container registry: Select Create new. Enter +++AzuremlcrXX+++** (Replace **XX** with a unique number)
+    - **Container registry: Select Create new. Enter !!AzuremlcrXX!!** (Replace **XX** with a unique number)
 
     Once you are done configuring the workspace, select **Review + Create**.
 
