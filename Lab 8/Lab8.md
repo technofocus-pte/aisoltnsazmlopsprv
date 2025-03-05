@@ -22,7 +22,7 @@ using the Azure OpenAI resource we created in the previous lab.
     from the left pane. Search for !!**gpt-35-turbo**!! and select
     **gpt-35-turbo-16k** from the models list.
 
-    ![](./media/img47png)
+    ![](./media/img47.png)
 
 2.  Ensure that the AOAI resource **AOAI-PF9898** is selected in the
     **Azure OpenAI resource** field. Select **Deploy** to deploy the
