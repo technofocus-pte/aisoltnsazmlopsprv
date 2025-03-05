@@ -164,12 +164,12 @@ generated](./media/image16.png)
 
     ![](./media/img44.png)
 
-5.  Click on **Go to resource** once the deployment is complete.
+5.  Click on **Go to resource** once the deployment is complete and select the **Azure OpenAI** resource.
 
     ![A screenshot of a computer Description automatically
 generated](./media/image19.png)
 
-6.  Select **Keys and Endpoint** from the left pane.
+6.  Select **Keys and Endpoint** under **Resource Management** from the left pane.
 
     ![A screenshot of a computer Description automatically
 generated](./media/image20.png)
@@ -181,12 +181,12 @@ generated](./media/image20.png)
 generated](./media/image21.png)
 
 8.  From the **Azure Machine Learning Studio**, select **Model catalog**
-    from the left pane.
+    from the left pane and select !!**gpt-4o**!!.
 
     ![A screenshot of a computer Description automatically
 generated](./media/image22.png)
 
-9.  Select **gpt-4o** and click on Deploy to deploy the model.
+9.  Click on **Deploy** to deploy the model.
 
     ![A screenshot of a computer Description automatically
 generated](./media/image23.png)
@@ -196,9 +196,6 @@ generated](./media/image23.png)
 
     ![A screenshot of a computer Description automatically
 generated](./media/image24.png)
-
-    ![A screenshot of a computer Description automatically
-generated](./media/image25.png)
 
 ## Task 2: Set up a Prompt flow connection
 
@@ -218,7 +215,7 @@ generated](./media/image26.png)
     
     - Subscription ID – Select your **assigned subscription**
     
-    - Azure OpenAI Account Names – Select **AOAI-PF9898**
+    - Azure OpenAI Account Names – Select **AOAI-PFXXXX**
     
     - Auth Mode – Select **API Key**
     
@@ -272,12 +269,14 @@ generated](./media/image31.png)
     ![A screenshot of a computer Description automatically
 generated](./media/image32.png)
 
-4.  A compute session is necessary for flow execution. The compute
+4. Once done, the created prompt flow is opened automatically in the Flow authoring page.
+   
+5.  A compute session is necessary for flow execution. The compute
     session manages the computing resources required for the application
     to run, including a Docker image that contains all necessary
     dependency packages.
 
-5.  On the flow authoring page, start a compute session by
+6.  On the flow authoring page, start a compute session by
     selecting **Start compute session**.
 
     ![A screenshot of a computer Description automatically
@@ -334,7 +333,7 @@ Depending on the connection type, you must select
 a **deployment_name** or a model from the dropdown list. For an Azure
 OpenAI connection, select a deployment. 
 
-1.  For the summarize_text_content, fill in the below details.
+1.  For the summarize_text_content node, fill in the below details.
 
     Connection – Select **AoaiML_pf**
     
@@ -345,19 +344,25 @@ OpenAI connection, select a deployment. 
     ![A screenshot of a computer Description automatically
 generated](./media/image36.png)
 
-2.  Set up connection similarly for the LLM nodes **classify_with_llm**.
+2.  Set up connection similarly for the LLM node **classify_with_llm**. Scroll down to view this node.
 
+    Connection – Select **AoaiML_pf**
+    
+    Api – Select **chat**
+    
+    deployment name – Select **gpt-4o-2024-11-20**
+    
     ![A screenshot of a computer Description automatically
 generated](./media/image37.png)
 
-3.  To test and debug a single node, select the **Run** icon at the top
+4.  To test and debug a single node, select the **Run** icon at the top
     of a node in the **Flow** view. You can expand **Inputs** and change
     the flow input URL to test the node behavior for different URLs.
 
-4.  The run status appears at the top of the node. After the run
+5.  The run status appears at the top of the node. After the run
     completes, run output appears in the node **Output** section.
 
-5.  Move to the starting of the flow and execute the
+6.  Move to the starting of the flow and execute the
     **fetch_text_content_from url** and execute the block.
 
     ![A screenshot of a computer Description automatically
@@ -365,7 +370,7 @@ generated](./media/image38.png)
 
     The **Graph** view also shows the single run node status.
 
-6.  Under **Inputs** section, provide the value for the **Value** field as !!https://play.google.com/store/apps/details?id=com.spotify.music!!
+7.  Scroll up to the starting of the Prompt flow page. Under **Inputs** section, provide the value for the **Value** field as !!https://play.google.com/store/apps/details?id=com.spotify.music!!
 
     Select **Run** from the top right, to test and debug the whole flow.
 
@@ -403,6 +408,16 @@ generated](./media/image40.png)
     ![A screenshot of a computer Description automatically
 generated](./media/image42.png)
 
+5. Similarly, replace the value in the Value field under the Inputs section with different urls and Run the flow and check how it performs. Sample urls are given here.
+
+   -    https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw
+
+        ![](./media/img45.png)
+             
+   -    https://arxiv.org/abs/2303.04671
+
+        ![](./media/img46.png)
+        
 **Summary:**
 
 In this lab, we have learnt to classify the URL into a web category with
