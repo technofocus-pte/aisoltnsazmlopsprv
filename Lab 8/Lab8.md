@@ -87,6 +87,10 @@ generated](./media/image8.png)
     ![A screenshot of a computer Description automatically
 generated](./media/image11.png)
 
+    ::: secondary
+    **Note:** If the session does not come to **Ready** state after 10 minutes, refresh the page and then execute the first cell.
+    :::
+
 **Note:** This will take 10 to 15 minutes to complete
 
 2.  Execute the next cell with az login to **login** to **Azure** CLI.
