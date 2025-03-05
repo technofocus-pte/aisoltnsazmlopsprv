@@ -20,7 +20,7 @@ will discover how to set up a dedicated workspace to organize and manage
 their machine learning projects effectively. This workspace serves as a
 central hub for collaboration, experimentation, and deployment.
 
-1.  Sign in to the Azure portal at !\!<https://portal.azure.com>!! and
+1.  Sign in to the Azure portal at !!https://portal.azure.com!! and
     login with your admin tenant credentials.
 
 2.  From the Azure portal home page, select **+ Create a resource**.
@@ -29,8 +29,7 @@ central hub for collaboration, experimentation, and deployment.
 generated](./media/image1.png)
 
 3.  On the **Create a resource** page, use the search bar to find
-    !!Azure Machine Learning**!!** and select **Azure** **Machine
-    Learning**.
+    !!Azure Machine Learning!! and select **Azure Machine Learning**.
 
     ![A screenshot of a computer Description automatically generated](./media/image2.png)
 
@@ -138,7 +137,7 @@ generated](./media/image14.png)
     
 ### Task 1.3: Create Azure OpenAI resource
 
-1.  From the Azure portal !!https://portal.azure.com!!, search for ans
+1.  From the Azure portal Home page, !!https://portal.azure.com!!, search for and
     select !!**AzureOpenAI**!!.
 
     ![](./media/image15.png)
@@ -150,17 +149,16 @@ generated](./media/image16.png)
 
 3.  Fill in the below details and click on **Next**.
 
-    - Resource group - Select !!**RGForMLOps**!!
+    - Resource group - Select **RGForMLOps**
     
     - Region – Select any nearest region (North Central US is being used
       here)
     
-    - Name - !!**AOAI-PF9898**!!
+    - Name - !!**AOAI-PFXXXX**!! (Replace XXXX with a random number to ensure uniqueness)
     
     - Pricing tier - **Standard**
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image17.png)
+    ![](./media/img43.png)
 
 4.  Accept the defaults in the next pages and click on **Create** in the
     **Review + create** page.
