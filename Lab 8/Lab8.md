@@ -20,10 +20,9 @@ using the Azure OpenAI resource we created in the previous lab.
 
 1.  From the Azure Machine Learning Studio, select **Model Catalog**
     from the left pane. Search for !!**gpt-35-turbo**!! and select
-    **gpt-35-turbo** from the models list.
+    **gpt-35-turbo-16k** from the models list.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image1.png)
+    ![](./media/img47png)
 
 2.  Ensure that the AOAI resource **AOAI-PF9898** is selected in the
     **Azure OpenAI resource** field. Select **Deploy** to deploy the
@@ -32,12 +31,14 @@ generated](./media/image1.png)
     ![A screenshot of a computer Description automatically
 generated](./media/image2.png)
 
-3.  Accept the **Deployment name** and select **Deploy**.
+    Keep a note of the model name and the deployment name in a notepad for use in further steps.
+    
+4.  Accept the **Deployment name** and select **Deploy**.
 
     ![A screenshot of a computer Description automatically
 generated](./media/image3.png)
 
-4.  Repeat the model deployment for !!**text-embedding-ada-002**!! with the
+5.  Repeat the model deployment for !!**text-embedding-ada-002**!! with the
     deployment name as **text-embedding-ada-002-2**
 
 ## Exercise 2 : Set up the environment
@@ -134,11 +135,9 @@ generated](./media/image16.png)
     inference.
 
 8.  **Execute** the next cell to set the model and **deployment** names.
-    Replace the values of the model name and the deployment name if you
-    have given different names while creating the model and deployment.
+    Replace the values of the model name and the deployment name with the ones you saved earlier.
 
-    ![A screenshot of a computer code Description automatically
-generated](./media/image17.png)
+    ![](./media/img48.png)
 
 9.  Finally we will combine the deployment and model information into a
     uri form which the AzureML embeddings components expect as input.
