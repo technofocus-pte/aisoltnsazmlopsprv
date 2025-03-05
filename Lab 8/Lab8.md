@@ -137,7 +137,7 @@ generated](./media/image16.png)
 8.  **Execute** the next cell to set the model and **deployment** names.
     Replace the values of the model name and the deployment name with the ones you saved earlier.
 
-    ![](./media/img48.png)
+    ![](./media/img49.png)
 
 9.  Finally we will combine the deployment and model information into a
     uri form which the AzureML embeddings components expect as input.
