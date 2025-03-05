@@ -151,8 +151,7 @@ generated](./media/image16.png)
 
     - Resource group - Select **RGForMLOps**
     
-    - Region – Select any nearest region (North Central US is being used
-      here)
+    - Region – Select any nearest region (East US2 is being used here)
     
     - Name - !!**AOAI-PFXXXX**!! (Replace XXXX with a random number to ensure uniqueness)
     
@@ -163,8 +162,7 @@ generated](./media/image16.png)
 4.  Accept the defaults in the next pages and click on **Create** in the
     **Review + create** page.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image18.png)
+    ![](./media/img44.png)
 
 5.  Click on **Go to resource** once the deployment is complete.
 
