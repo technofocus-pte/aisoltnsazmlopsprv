@@ -37,7 +37,7 @@ generated](./media/image2.png)
     ![A screenshot of a computer Description automatically
 generated](./media/image3.png)
 
-4.  Repeat the model deployment for **text-embedding-002** with the
+4.  Repeat the model deployment for !!**text-embedding-ada-002**!! with the
     deployment name as **text-embedding-ada-002-2**
 
 ## Exercise 2 : Set up the environment
