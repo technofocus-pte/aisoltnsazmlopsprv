@@ -552,9 +552,9 @@ In this step you will manually trigger the training pipeline. In a
 production scenario, this could be triggered by a ci/cd pipeline based
 on changes to the feature-retrieval spec in the source repository.
 
-1.	   Navigate to the **training_pipeline.yaml** file in the path **featurestore -> project -> fraud_model -> pipelines**.
+1. Navigate to the **training_pipeline.yaml** file in the path **featurestore -> project -> fraud_model -> pipelines**.
    
-2.	   Replace the **compute name** in the lines **44, 66 and 83** with the **name** of your **cluster**, **cpu-cluster-fsXX**.
+2. Replace the **compute name** in the lines **44, 66 and 83** with the **name** of your **cluster**, **cpu-cluster-fsXX**.
 
       ![](./media/img15.png)
 
