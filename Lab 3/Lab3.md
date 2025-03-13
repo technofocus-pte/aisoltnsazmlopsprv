@@ -616,7 +616,7 @@ generated](./media/image68.png)
     using the feature sets (determined from the feature retrieval spec
     when the model was registered).
 
-    ![A screenshot of a computer Description automatically
+     ![A screenshot of a computer Description automatically
 generated](./media/image69.png)
 
 ## Exercise 4: Clean up the resources
