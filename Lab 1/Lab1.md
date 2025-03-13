@@ -526,7 +526,7 @@ In this exercise, you will learn to
 We are in the **Train & validate model** stage of the **Machine Learning
 project workflow.**
 
-    ![A picture containing text, font, number, screenshot Description automatically generated](./media/image54.png)
+![A picture containing text, font, number, screenshot Description automatically generated](./media/image54.png)
     
 ### Task 1: Upload Notebook
 
