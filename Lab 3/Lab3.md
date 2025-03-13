@@ -133,7 +133,7 @@ generated](./media/image13.png)
 
    ::: secondary
    
-   **Note:** You can get the name from the folder structure -> Users -> <UserName>
+   **Note:** You can get the name from the folder structure -> Users -> < UserName >
 
    ![](./media/img38.png)
    
